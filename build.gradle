@@ -23,8 +23,8 @@ bintray {
     pkg {
         userOrg = '' // If you want to publish to an organization
         name = "$project.name"
-        issueTrackerUrl = "https://github.com/enesakar/hazelgrails/issues"
-        vcsUrl = "https://github.com/enesakar/hazelgrails"
+        issueTrackerUrl = "https://github.com/hazelcast/hazelgrails/issues"
+        vcsUrl = "https://github.com/hazelcast/hazelgrails"
         version {
             attributes = ['grails-plugin': "$project.group:$project.name"]
             name = project.version
@@ -92,8 +92,8 @@ task wrapper(type: Wrapper) {
 grailsPublish {
 //    user = 'user'  // Not required if you defined BINARY_USER var
 //    key = 'key'    // Not required if you defined BINARY_KEY var
-//    userOrg = 'hazelcast' // Optional
-    githubSlug = 'enesakar/hazelgrails'
+    userOrg = 'hazelcast' // Optional
+    githubSlug = 'hazelcast/hazelcast-grails'
     license {
         name = 'Apache-2.0'
     }
